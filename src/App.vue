@@ -35,7 +35,7 @@ export default {
       },
       {
         property: 'og:image',
-        content: '@/assets/ConfigImgs/thumbnail.png'
+        content: 'https://pbs.twimg.com/media/EjARf5hU8AE0ojU?format=png&name=large'
       }
     ]
   },
