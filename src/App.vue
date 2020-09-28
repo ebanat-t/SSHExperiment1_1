@@ -11,7 +11,51 @@
 var userLog = {}
 
 export default {
-  name: 'App'
+  name: 'App',
+
+  head () {
+    return {
+      meta: [
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          name: 'twitter:site',
+          content: '@EbanatT'
+        },
+        {
+          property: 'og:url',
+          content: 'https://ebanat-t.github.io/SSHExperiment1_1/#/'
+        },
+        {
+          property: 'og:title',
+          content: 'スイッチの操作性に関する調査'
+        },
+        {
+          property: 'og:image',
+          content: '@/assets/ConfigImgs/thumbnail.png'
+        },
+
+      ],
+      
+    }
+  },
+
+  mounted() {
+
+    this.setTitle()
+
+  },
+
+  methods: {
+
+    setTitle() {
+      var setTitle = 'スイッチの操作性に関する調査'
+      document.title = setTitle
+    }
+
+  }
 }
 </script>
 
