@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>これは換気扇のスイッチです。<br>換気扇が動いている状態にしてください</p>
+        <p>これは換気扇のスイッチです。<br>換気扇が動いている状態にしてください。</p>
         <div id="question-img-comp">
             <a class="switcharea" @click="switchState()">
                 <img src="@/assets/QuestionImgs/q4_state_a.png" class="question-img" id="state_a">

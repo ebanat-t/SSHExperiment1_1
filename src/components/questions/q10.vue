@@ -1,10 +1,10 @@
 <template>
     <div>
-        <p>これは換気扇のスイッチです。<br>換気扇が動いている状態にしてください。</p>
+        <p>これは画像編集のフィルターのスイッチです。<br>フィルターがかかっている状態にしてください。</p>
         <div id="question-img-comp">
             <a class="switcharea" @click="switchState()">
-                <img src="@/assets/QuestionImgs/q3_state_a.png" class="question-img" id="state_a">
-            <img src="@/assets/QuestionImgs/q3_state_b.png" class="question-img" id="state_b">
+                <img src="@/assets/QuestionImgs/q10_state_a.png" class="question-img" id="state_a">
+            <img src="@/assets/QuestionImgs/q10_state_b.png" class="question-img" id="state_b">
             </a>
             
         
@@ -65,7 +65,7 @@ export default {
 
         },
 
-        switchState(){
+        switchState() {
 
 
             if(document.getElementById('state_a').style.display == "none"){
@@ -94,7 +94,7 @@ export default {
 
             var obj = { 'time': getNow.getNow(), 'choice': choice } 
 
-            this.$router.push({ path: 'q3_rs', query: obj })
+            this.$router.push({ path: 'q10_rs', query: obj })
 
         }
 

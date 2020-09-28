@@ -46,6 +46,10 @@ export default {
         
         putResult() {
 
+            if (!this.reasonText) {
+                this.reasonText = 'none'
+            }
+
             var obj = { q7: { 'time': this.getParameter.time, 'choice': this.getParameter.choice, 'reason': this.reasonText } }
             this.$store.commit('addObj', obj)
 

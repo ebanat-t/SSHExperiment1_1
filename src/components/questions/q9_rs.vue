@@ -2,7 +2,7 @@
     <div>
         <h2>なぜそのような操作を行ったのですか?</h2>
         <p>簡単な文章で構いません。</p>
-        <textarea v-model="reasonText" placeholder="理由" id="textbox"></textarea>
+        <textarea v-model="reasonText" placeholder="理由"></textarea>
             
             
         
@@ -41,7 +41,7 @@ export default {
 
     methods: {
 
-
+        
 
         
         putResult() {
@@ -50,14 +50,12 @@ export default {
                 this.reasonText = 'none'
             }
 
-            var obj = { q1: { 'time': this.getParameter.time, 'choice': this.getParameter.choice, 'reason': this.reasonText } }
+            var obj = { q9: { 'time': this.getParameter.time, 'choice': this.getParameter.choice, 'reason': this.reasonText } }
             this.$store.commit('addObj', obj)
 
             console.log(this.$store.state.userInfo)
-            this.$router.push('q2')
+            this.$router.push('q10')
         }
-
-
 
     }
 

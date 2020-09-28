@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>これは動画のスイッチです。<br>動画が再生されている状態にしてください。</p>
+        <p>これはスマホのライトのスイッチです。<br>ライトがついている状態にしてください。</p>
         <div id="question-img-comp">
             <a class="switcharea" @click="switchState()">
                 <img src="@/assets/QuestionImgs/q7_state_a.png" class="question-img" id="state_a">

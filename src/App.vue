@@ -62,4 +62,34 @@ p {
   text-align: center;
 }
 
+textarea {
+  width: calc(100% - 6px);
+  height: 5rem;
+  border: 2px solid #afafaf;
+  border-radius: 5px;
+  color: #2d2d2d;
+  padding: 5px;
+  line-height: 1.0rem;
+}
+
+textarea:focus {
+  outline-style: none;
+  border: 2px solid #6e6e6e;
+}
+
+
+input {
+  border: 2px solid #afafaf;
+  border-radius: 5px;
+  color: #2d2d2d;
+  padding: 5px;
+  line-height: 1.0rem;
+}
+
+input:focus {
+  outline-style: none;
+  border: 2px solid #6e6e6e;
+}
+
+
 </style>

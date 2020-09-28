@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>これはスマホのライトのスイッチです。<br>スマホのライトがが光っている状態にしてください。</p>
+        <p>これはスマホの秘密メモのロックを切り替えるスイッチです。<br>メモがロックされている状態にしてください。</p>
         <div id="question-img-comp">
             <a class="switcharea" @click="switchState()">
                 <img src="@/assets/QuestionImgs/q6_state_a.png" class="question-img" id="state_a">

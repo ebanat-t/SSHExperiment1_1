@@ -14,6 +14,8 @@ import Q5 from '@/components/questions/q5'
 import Q6 from '@/components/questions/q6'
 import Q7 from '@/components/questions/q7'
 import Q8 from '@/components/questions/q8'
+import Q9 from '@/components/questions/q9'
+import Q10 from '@/components/questions/q10'
 import Q1_rs from '@/components/questions/q1_rs'
 import Q2_rs from '@/components/questions/q2_rs'
 import Q3_rs from '@/components/questions/q3_rs'
@@ -22,6 +24,8 @@ import Q5_rs from '@/components/questions/q5_rs'
 import Q6_rs from '@/components/questions/q6_rs'
 import Q7_rs from '@/components/questions/q7_rs'
 import Q8_rs from '@/components/questions/q8_rs'
+import Q9_rs from '@/components/questions/q9_rs'
+import Q10_rs from '@/components/questions/q10_rs'
 
 
 Vue.use(Router)
@@ -127,6 +131,26 @@ export default new Router({
       path: '/q8_rs',
       name: 'Q8_rs',
       component: Q8_rs
+    },
+    {
+      path: '/q9',
+      name: 'Q9',
+      component: Q9
+    },
+    {
+      path: '/q9_rs',
+      name: 'Q9_rs',
+      component: Q9_rs
+    },
+    {
+      path: '/q10',
+      name: 'Q10',
+      component: Q10
+    },
+    {
+      path: '/q10_rs',
+      name: 'Q10_rs',
+      component: Q10_rs
     },
     {
       path: '/fin',

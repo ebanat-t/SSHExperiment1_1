@@ -1,10 +1,10 @@
 <template>
     <div>
-        <p>これは換気扇のスイッチです。<br>換気扇が動いている状態にしてください。</p>
+        <p>これは音楽再生のボタンです。<br>音楽が停止している状態にしてください。</p>
         <div id="question-img-comp">
             <a class="switcharea" @click="switchState()">
-                <img src="@/assets/QuestionImgs/q3_state_a.png" class="question-img" id="state_a">
-            <img src="@/assets/QuestionImgs/q3_state_b.png" class="question-img" id="state_b">
+                <img src="@/assets/QuestionImgs/q9_state_a.png" class="question-img" id="state_a">
+            <img src="@/assets/QuestionImgs/q9_state_b.png" class="question-img" id="state_b">
             </a>
             
         
@@ -94,7 +94,7 @@ export default {
 
             var obj = { 'time': getNow.getNow(), 'choice': choice } 
 
-            this.$router.push({ path: 'q3_rs', query: obj })
+            this.$router.push({ path: 'q9_rs', query: obj })
 
         }
 
