@@ -5,8 +5,11 @@ import App from './App'
 import router from './router'
 import firebase from '@/firebase/firebase'
 import store from '../store'
+import VueMeta from 'vue-meta'
 
 Vue.config.productionTip = false
+
+Vue.use(VueMeta)
 
 
 new Vue({

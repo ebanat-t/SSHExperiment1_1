@@ -13,8 +13,9 @@ var userLog = {}
 export default {
   name: 'App',
 
-  head () {
+  metaInfo() {
     return {
+      title: 'スイッチの操作性に関する調査',
       meta: [
         {
           name: 'twitter:card',
@@ -35,12 +36,12 @@ export default {
         {
           property: 'og:image',
           content: '@/assets/ConfigImgs/thumbnail.png'
-        },
-
-      ],
-      
+        }
+      ]
     }
   },
+
+  
 
   mounted() {
 
