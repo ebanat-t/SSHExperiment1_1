@@ -12,40 +12,38 @@ var userLog = {}
 
 export default {
   name: 'App',
-
-  metaInfo() {
-    return {
-      title: 'スイッチの操作性に関する調査',
-      meta: [
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image'
-        },
-        {
-          name: 'twitter:site',
-          content: '@EbanatT'
-        },
-        {
-          property: 'og:url',
-          content: 'https://ebanat-t.github.io/SSHExperiment1_1/#/'
-        },
-        {
-          property: 'og:title',
-          content: 'スイッチの操作性に関する調査'
-        },
-        {
-          property: 'og:image',
-          content: '@/assets/ConfigImgs/thumbnail.png'
-        }
-      ]
-    }
-  },
-
   
+  metaInfo: {
+    
+    title: 'スイッチの操作性に関する調査',
+    meta: [
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        name: 'twitter:site',
+        content: '@EbanatT'
+      },
+      {
+        property: 'og:url',
+        content: 'https://ebanat-t.github.io/SSHExperiment1_1/#/'
+      },
+      {
+        property: 'og:title',
+        content: 'スイッチの操作性に関する調査'
+      },
+      {
+        property: 'og:image',
+        content: '@/assets/ConfigImgs/thumbnail.png'
+      }
+    ]
+  },
 
   mounted() {
 
     this.setTitle()
+    this.setMeta()
 
   },
 
@@ -54,6 +52,14 @@ export default {
     setTitle() {
       var setTitle = 'スイッチの操作性に関する調査'
       document.title = setTitle
+    },
+
+    setMeta() {
+      document.querySelector('meta[name="twitter:card"]').setAttribute('content', 'summary_large_image')
+      document.querySelector('meta[name="twitter:site"]').setAttribute('content', '@EbanatT')
+      document.querySelector('meta[property="og:url"]').setAttribute('content', 'https://ebanat-t.github.io/SSHExperiment1_1/#/')
+      document.querySelector('meta[property="og:title"]').setAttribute('content', 'スイッチの操作性に関する調査')
+      document.querySelector('meta[property="og:image"]').setAttribute('content', '@/assets/ConfigImgs/thumbnail.png')
     }
 
   }
